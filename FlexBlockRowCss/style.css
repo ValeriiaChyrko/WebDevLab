@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    height: 200px;
+    column-gap: 20px;
+}
+
+.container div {
+    width: 200px;
+    background-color: black;
+}
+ 
+.container div:nth-child(2n) {
+    background-color: blue;
+}
+
+.container div:hover {
+    background-color: orange;
+}
