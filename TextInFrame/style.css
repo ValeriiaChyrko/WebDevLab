@@ -1,0 +1,15 @@
+.black {
+    display: inline-block;
+    border: 1px solid black;
+    font-size: 30px;
+    font-weight: 600;
+    padding-left: 0.25em;
+}
+
+.white {
+    display: inline-block;
+    color: white;
+    background-color: black;
+    margin: 1px;
+    padding: 0.25em 0.25em 0 0;
+}
