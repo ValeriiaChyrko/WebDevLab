@@ -12,14 +12,12 @@ li {
 li a {
     display: block;
     color: darkred;
-    text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .pager-current {
     background-color: lightgrey;
-    text-align: center;
     padding: 14px 16px;
     box-shadow: inset 0px -3px #333333;
 }
