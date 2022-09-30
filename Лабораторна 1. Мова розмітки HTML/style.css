@@ -1,0 +1,111 @@
+body {
+    background-color: #D2DAFF;
+    color: #533483;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr.first_line {
+    border-top: 6px solid #277BC0;
+    margin: 0; padding: 0;
+}
+
+hr.second_line {
+    border-top: 4px solid #FFB200;
+    width: 75%;
+    margin: 0; padding: 0;
+}
+
+hr.third_line {
+    border-top: 2px dotted #367E18;
+    width: 50%;
+    margin-left: 0%;
+}
+
+hr.fourth_line {
+    border-top: 3px dashed #AB46D2;
+    width: 50%;
+    text-align: right;
+    margin-right: 0%;
+}
+
+hr.fifth_line {
+    border-top: 4px double #FF6FB5;
+    width: 75%;
+    text-align: right;
+    margin-right: 0;  margin-bottom: 0;
+    padding: 0;
+}
+
+hr.sixth_line {
+    border-top: 5px solid #55D8C1;
+    margin: 0; padding: 0;
+}
+
+p.poem {
+    margin-left: 2em;
+}
+
+strong {
+    font-weight: bold;
+    margin-left: 3em;
+}
+
+a:link {
+    color: #205375;
+}
+
+a:visited {
+    color: #112B3C;
+}
+
+a:hover {
+    color: #F66B0E;
+}
+
+img {
+    height: 200px;
+}
+
+table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 50%;
+}
+
+td, th {
+    border: 1px solid #000000;
+    padding: 0.5rem;
+}
+
+.teacher-caption {
+    background-color: #1A5F7A;
+    color: #FEECE9; 
+}
+
+.first-teacher {
+    background-color: #1E3163;
+    color: #CCD1E4; 
+}
+
+.second-teacher {
+    background-color: #24A19C;
+    color: #F5F5F5; 
+}
+
+.student-caption {
+    background-color: #170055;
+    color: #FFE3E3; 
+}
+
+.first-student {
+    background-color: #368B85;
+    color: #EEEEEE; 
+}
+
+.second-student {
+    background-color: #001E6C;
+    color: #C6B4CE; 
+}
