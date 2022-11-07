@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <title>Main-content Notifications</title>
+  </head>
+  <body class="bg-gray-200">
+      <div class="my-8 mx-48 bg-white">
+          <div class="container container-search">
+              <form class="md:flex lg:items-center px-8 pt-8 pb-4">   
+                  <label for="simple-search" class="sr-only">Search</label>
+                  <div class="relative w-full">
+                      <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                          <span class="material-icons md-light w-5 h-5 text-gray-500"> search </span>
+                      </div>
+                      <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-xs md:text-sm lg:text-base rounded-lg block w-full pl-10 p-2.5" placeholder="Що будемо шукати?" required>
+                  </div>
+                  <button type="submit" class="px-6 py-2 mt-4 mr:2 w-full md:w-auto md:ml-2 lg:py-3 md:mt-0 font-medium text-base text-gray-900 bg-purple-300 rounded-lg border hover:bg-purple-700 hover:text-white">
+                      <span class="">Знайти</span>
+                  </button>
+              </form>
+          </div>
+        
+          <ul class="w-full truncate border-y border-gray-300 text-gray-900 bg-white inline-flex flex-col lg:flex-row px-8 py-2">
+            <li class="w-full">
+              <button id="dropdownInformationButton" class="text-gray-700 flex-auto hover:text-gray-900 font-medium rounded-lg text-base text-center inline-flex items-center" type="button"> Дії з виділеними (0) <div class="pt-2 px-2 float-right"><span class="material-icons md-light"> expand_more </span></div></button>
+              <!-- Dropdown menu -->
+              <div id="dropdownInformation" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow">
+                <ul class="py-1 text-sm text-gray-700">
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-purple-200">Позначити як непрочитане</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-purple-200">Позначити як прочитане</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-purple-200">Видалити</a>
+                  </li>
+                  <li>
+                    <a href="#" class="block py-2 px-4 hover:bg-purple-200">Зняти прапорці</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="flex-none">
+                <div class="flex items-center pl-3">
+                    <input id="react-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-indigo-500 rounded border-gray-300 cursor-pointer">
+                    <label for="react-checkbox-list" class="py-3 ml-2 text-sm font-medium text-gray-700">Непрочитані</label>
+                </div>
+            </li>
+            <li class="flex-none">
+                <div class="flex items-center pl-3">
+                    <input id="angular-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-indigo-500 rounded border-gray-300 cursor-pointer">
+                    <label for="angular-checkbox-list" class="py-3 ml-2 text-sm font-medium text-gray-700">Прочитані</label>
+                </div>
+            </li>
+            <li class="flex-none">
+                <div class="flex items-center pl-3">
+                    <input id="laravel-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-indigo-500 rounded border-gray-300 cursor-pointer">
+                    <label for="laravel-checkbox-list" class="py-3 ml-2 text-sm font-medium text-gray-700">Всі</label>
+                </div>
+            </li>
+          </ul>
+        <div class="overflow-x-auto relative sm:rounded-lg">
+          <table class="w-full text-sm text-left text-gray-500">
+            <thead class="text-md text-gray-700">
+              <tr class="truncate">
+                  <th scope="col" class="py-3 px-6">
+                    <div class="items-center">
+                      <input id="laravel-checkbox-list" type="checkbox" value="" class="w-4 h-4 p-1 text-indigo-500 rounded border-gray-300 cursor-pointer">
+                      <button id="dropdownInformationButton" class="py-3 ml-2 text-gray-700 flex-auto hover:text-gray-900 font-medium rounded-lg text-base text-center inline-flex items-center" type="button"> Повідомлення <div class="pt-2 px-2 float-right"></div></button>
+                  </div>
+                    
+                  </th>
+                  <th scope="col" class="py-3 px-6">
+                    <button id="dropdownInformationButton" class="text-gray-700 flex-auto hover:text-gray-900 font-medium rounded-lg text-base text-center inline-flex items-center" type="button"> Відправник <div class="pt-2 px-2 float-right"><span class="material-icons md-light"> expand_more </span></div></button>
+                  </th>
+                  <th scope="col" class="py-3 px-6">
+                    <button id="dropdownInformationButton" class="text-gray-700 flex-auto hover:text-gray-900 font-medium rounded-lg text-base text-center inline-flex items-center" type="button"> Дата <div class="pt-2 px-2 float-right"><span class="material-icons md-light"> expand_more </span></div></button>
+                  </th>
+              </tr>
+          </thead>
+              <tbody>
+                  <tr class="bg-white border-b hover:bg-purple-200">
+                      <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">
+                        <div>
+                          <input id="angular-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-indigo-500 rounded border-gray-300 cursor-pointer">
+                          <label for="angular-checkbox-list" class="py-3 ml-2">Тема листа</label>
+                        </div>
+                      </th>
+                      <td class="py-4 px-6">
+                          Прізвище ім'я
+                    </td>
+                      <td class="py-4 px-6">
+                          06.11.2022
+                      </td>
+                      <td class="py-4 px-6 text-right">
+                        <button type="delete">
+                          <span class="material-icons md-light"> delete </span>
+                      </button>
+                      </td>
+                  </tr>
+                  <tr class="bg-white border-b hover:bg-purple-200">
+                    <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                      <div>
+                        <input id="angular-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-indigo-500 rounded border-gray-300 cursor-pointer">
+                        <label for="angular-checkbox-list" class="py-3 ml-2">Тема листа</label>
+                      </div>
+                    </th>
+                    <td class="py-4 px-6">
+                        Прізвище ім'я
+                  </td>
+                    <td class="py-4 px-6">
+                        06.11.2022
+                    </td>
+                    <td class="py-4 px-6 text-right">
+                      <button type="delete">
+                        <span class="material-icons md-light"> delete </span>
+                    </button>
+                    </td>
+                </tr>
+                <tr class="bg-white border-b hover:bg-purple-200">
+                  <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    <div>
+                      <input id="angular-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-indigo-500 rounded border-gray-300 cursor-pointer">
+                      <label for="angular-checkbox-list" class="py-3 ml-2">Тема листа</label>
+                    </div>
+                  </th>
+                  <td class="py-4 px-6">
+                      Прізвище ім'я
+                </td>
+                  <td class="py-4 px-6">
+                      06.11.2022
+                  </td>
+                  <td class="py-4 px-6 text-right">
+                    <button type="delete">
+                      <span class="material-icons md-light"> delete </span>
+                  </button>
+                  </td>
+              </tr>
+              <tr class="bg-white border-b hover:bg-purple-200">
+                <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  <div>
+                    <input id="angular-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-indigo-500 rounded border-gray-300 cursor-pointer">
+                    <label for="angular-checkbox-list" class="py-3 ml-2">Тема листа</label>
+                  </div>
+                </th>
+                <td class="py-4 px-6">
+                    Прізвище ім'я
+              </td>
+                <td class="py-4 px-6">
+                    06.11.2022
+                </td>
+                <td class="py-4 px-6 text-right">
+                  <button type="delete">
+                    <span class="material-icons md-light"> delete </span>
+                </button>
+                </td>
+              </tr>
+              </tbody>
+          </table>
+        </div>
+        <nav aria-label="Page navigation" class="py-4 px-6 inline-flex w-full flex-col lg:flex-row items-center">
+          <ul class="inline-flex items-center flex-auto">
+            <li>
+              <a href="#" class="block py-1 px-1 ml-0 leading-tight text-gray-500 bg-white rounded-l-lg border border-gray-300 hover:bg-purple-200 hover:text-gray-700">
+                <span class="material-icons md-18">navigate_before</span>
+              </a>
+            </li>
+            <li>
+              <input type="text" class="w-11 z-10 py-2 px-3 mx-0.5 leading-tight text-gray-700 border border-gray-300 hover:bg-purple-200 cursor-text" placeholder="01">
+            </li>
+            <li>
+              <a href="#" class="block py-1 px-1 ml-0 leading-tight text-gray-500 rounded-r-lg border border-gray-300 hover:bg-purple-200 hover:text-gray-700">
+                <span class="material-icons md-18">navigate_next</span>
+              </a>
+            </li>
+          </ul>
+          <div class="flex-none text-xs">
+            <div class="text-gray-700 flex-auto hover:text-gray-900 font-medium rounded-lg md:text-base text-center inline-flex items-center">
+              Показати елементiв на сторiнцi:
+            </div>
+            <select id="pages" class="border border-gray-300 md:text-sm rounded-lg px-2 py-2 cursor-pointer">
+              <option selected>8</option>
+              <option value="16">16</option>
+              <option value="32">32</option>
+              <option value="64">64</option>
+              <option value="all">Всі</option>
+            </select>
+          </div>
+        </nav>
+
+
+      </div>
+  </body>
+</html>
