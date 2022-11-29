@@ -24,50 +24,50 @@
                   </button>
               </form>
           </div>
-        
-          <ul class="w-full truncate border-y border-gray-300 text-gray-900 bg-white inline-flex flex-col md:flex-row px-8 py-2">
-            <li class="w-full">
-              <button id="dropdownInformationButton" class="text-gray-700 flex-auto hover:text-gray-900 font-medium rounded-lg text-sm lg:text-base text-center inline-flex items-center" type="button"> Дії з виділеними (0) <div class="pt-2 px-2 float-right"><span class="material-icons md-light"> expand_more </span></div></button>
-              <!-- Dropdown menu -->
-              <div id="dropdownInformation" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow">
-                <ul class="py-1 text-sm text-gray-700">
-                  <li>
-                    <a href="#" class="block py-2 px-4 hover:bg-purple-200">Позначити як непрочитане</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block py-2 px-4 hover:bg-purple-200">Позначити як прочитане</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block py-2 px-4 hover:bg-purple-200">Видалити</a>
-                  </li>
-                  <li>
-                    <a href="#" class="block py-2 px-4 hover:bg-purple-200">Зняти прапорці</a>
-                  </li>
-                </ul>
+          <div class="px-4 md:px-10 py-1 md:py-3">
+            <div class="flex flex-row items-center justify-between">
+                <div tabindex="0" class="text-base md:text-xl font-bold leading-normal text-gray-700">Сповіщення</div>
+            </div>
+        </div>
+        <div class="py-1 md:py-3 px-4 md:px-8 xl:px-10">
+          <div class="inline-flex flex-col md:flex-row items-center justify-between">
+              <div class="flex items-center">
+                  <a class="rounded-full focus:outline-none focus:ring-2  focus:bg-indigo-50 focus:ring-indigo-800">
+                      <div class="py-2 px-4 lg:px-8 bg-indigo-100 text-indigo-700 rounded-full text-xs md:text-sm lg:text-base">
+                          <p>Всі</p>
+                      </div>
+                  </a>
+                  <a class="rounded-full focus:outline-none focus:ring-2 focus:bg-indigo-50 focus:ring-indigo-800 ml-2 md:ml-4">
+                      <div class="py-2 px-4 lg:px-8 text-gray-600 hover:text-indigo-700 hover:bg-indigo-100 rounded-full text-xs md:text-sm lg:text-base">
+                          <p>Непрочитані</p>
+                      </div>
+                  </a>
+                  <a class="rounded-full focus:outline-none focus:ring-2 focus:bg-indigo-50 focus:ring-indigo-800 ml-2 md:ml-4">
+                      <div class="py-2 px-4 lg:px-8 text-gray-600 hover:text-indigo-700 hover:bg-indigo-100 rounded-full text-xs md:text-sm lg:text-base">
+                          <p>Обрані</p>
+                      </div>
+                  </a>
               </div>
-            </li>
-            <li class="lg:flex-none">
-                <div class="flex items-center pl-3">
-                    <input id="react-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-indigo-500 rounded border-gray-300 cursor-pointer">
-                    <label for="react-checkbox-list" class="py-3 ml-2 text-xs lg:text-sm font-medium text-gray-700">Непрочитані</label>
-                </div>
-            </li>
-            <li class="lg:flex-none">
-                <div class="flex items-center pl-3">
-                    <input id="angular-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-indigo-500 rounded border-gray-300 cursor-pointer">
-                    <label for="angular-checkbox-list" class="py-3 ml-2 text-xs lg:text-sm font-medium text-gray-700">Обрані</label>
-                </div>
-            </li>
-          </ul>
+              <!--
+              <div>
+                <button class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 mt-4 sm:mt-0 inline-flex items-start justify-start px-6 py-3 bg-indigo-700 hover:bg-indigo-600 focus:outline-none rounded">
+                  <p class="text-sm font-medium leading-none text-white">Додати в обрані</p>
+                </button>
+                <button class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 mt-4 sm:mt-0 inline-flex items-start justify-start px-6 py-3 bg-indigo-700 hover:bg-indigo-600 focus:outline-none rounded">
+                  <p class="text-sm font-medium leading-none text-white">Видалити</p>
+                </button>
+              </div>
+              -->
+          </div>
+        </div>
         <div class="overflow-x-auto relative px-4 sm:rounded-lg">
           <table class="w-full text-xs lg:text-sm text-left text-gray-500">
             <thead class="text-gray-700">
               <tr class="truncate font-medium rounded-lg text-xs md:text-sm lg:text-base items-center">
                   <th class="p-4 w-6">
-                    <input type="checkbox" value="" class="w-4 h-4 p-1 text-indigo-500 rounded border-gray-300 cursor-pointer">
                   </th>
                   <th scope="col" class="py-3 px-2">
-                    <div class="py-3 ml-2 flex-auto"> Сповіщення</div>
+                    <button id="dropdownInformationButton" class="flex-auto inline-flex items-center hover:text-gray-900" type="button"> Тип сповіщення <div class="pt-2 px-2 float-right"><span class="material-icons md-light"> expand_more </span></div></button>
                   </th>
                   <th scope="col" class="py-3 px-2">
                     <button id="dropdownInformationButton" class="flex-auto inline-flex items-center hover:text-gray-900" type="button"> Відправник <div class="pt-2 px-2 float-right"><span class="material-icons md-light"> expand_more </span></div></button>
