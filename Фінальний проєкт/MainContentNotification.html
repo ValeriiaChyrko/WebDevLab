@@ -25,9 +25,9 @@
               </form>
           </div>
         
-          <ul class="w-full truncate border-y border-gray-300 text-gray-900 bg-white inline-flex flex-col lg:flex-row px-8 py-2">
+          <ul class="w-full truncate border-y border-gray-300 text-gray-900 bg-white inline-flex flex-col md:flex-row px-8 py-2">
             <li class="w-full">
-              <button id="dropdownInformationButton" class="text-gray-700 flex-auto hover:text-gray-900 font-medium rounded-lg text-base text-center inline-flex items-center" type="button"> Дії з виділеними (0) <div class="pt-2 px-2 float-right"><span class="material-icons md-light"> expand_more </span></div></button>
+              <button id="dropdownInformationButton" class="text-gray-700 flex-auto hover:text-gray-900 font-medium rounded-lg text-sm lg:text-base text-center inline-flex items-center" type="button"> Дії з виділеними (0) <div class="pt-2 px-2 float-right"><span class="material-icons md-light"> expand_more </span></div></button>
               <!-- Dropdown menu -->
               <div id="dropdownInformation" class="hidden z-10 w-44 bg-white rounded divide-y divide-gray-100 shadow">
                 <ul class="py-1 text-sm text-gray-700">
@@ -46,34 +46,34 @@
                 </ul>
               </div>
             </li>
-            <li class="flex-none">
+            <li class="lg:flex-none">
                 <div class="flex items-center pl-3">
                     <input id="react-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-indigo-500 rounded border-gray-300 cursor-pointer">
-                    <label for="react-checkbox-list" class="py-3 ml-2 text-sm font-medium text-gray-700">Непрочитані</label>
+                    <label for="react-checkbox-list" class="py-3 ml-2 text-xs lg:text-sm font-medium text-gray-700">Непрочитані</label>
                 </div>
             </li>
-            <li class="flex-none">
+            <li class="lg:flex-none">
                 <div class="flex items-center pl-3">
                     <input id="angular-checkbox-list" type="checkbox" value="" class="w-4 h-4 text-indigo-500 rounded border-gray-300 cursor-pointer">
-                    <label for="angular-checkbox-list" class="py-3 ml-2 text-sm font-medium text-gray-700">Обрані</label>
+                    <label for="angular-checkbox-list" class="py-3 ml-2 text-xs lg:text-sm font-medium text-gray-700">Обрані</label>
                 </div>
             </li>
           </ul>
         <div class="overflow-x-auto relative px-4 sm:rounded-lg">
-          <table class="w-full text-sm text-left text-gray-500">
-            <thead class="text-md text-gray-700">
-              <tr class="truncate">
+          <table class="w-full text-xs lg:text-sm text-left text-gray-500">
+            <thead class="text-gray-700">
+              <tr class="truncate font-medium rounded-lg text-xs md:text-sm lg:text-base items-center">
                   <th class="p-4 w-6">
                     <input type="checkbox" value="" class="w-4 h-4 p-1 text-indigo-500 rounded border-gray-300 cursor-pointer">
                   </th>
                   <th scope="col" class="py-3 px-2">
-                    <button id="dropdownInformationButton" class="py-3 ml-2 text-gray-700 flex-auto font-medium rounded-lg text-base text-center inline-flex items-center" type="button"> Сповіщення</button>
+                    <div class="py-3 ml-2 flex-auto"> Сповіщення</div>
                   </th>
                   <th scope="col" class="py-3 px-2">
-                    <button id="dropdownInformationButton" class="text-gray-700 flex-auto hover:text-gray-900 font-medium rounded-lg text-base text-center inline-flex items-center" type="button"> Відправник <div class="pt-2 px-2 float-right"><span class="material-icons md-light"> expand_more </span></div></button>
+                    <button id="dropdownInformationButton" class="flex-auto inline-flex items-center hover:text-gray-900" type="button"> Відправник <div class="pt-2 px-2 float-right"><span class="material-icons md-light"> expand_more </span></div></button>
                   </th>
                   <th scope="col" class="py-3 px-2">
-                    <button id="dropdownInformationButton" class="text-gray-700 flex-auto hover:text-gray-900 font-medium rounded-lg text-base text-center inline-flex items-center" type="button"> Дата <div class="pt-2 px-2 float-right"><span class="material-icons md-light"> expand_more </span></div></button>
+                    <button id="dropdownInformationButton" class="flex-auto inline-flex items-center hover:text-gray-900" type="button"> Дата <div class="pt-2 px-2 float-right"><span class="material-icons md-light"> expand_more </span></div></button>
                   </th>
               </tr>
           </thead>
@@ -91,13 +91,13 @@
                                       history_edu
                                   </span>
                               </div>
-                              <div class="text-base">
+                              <div class="text-sm lg:text-base">
                                 Програмування C# (2 курс, 1 семестр)
                               </div>
                           </div>
                           <div class="block px-2">
                             <div>
-                              <div class="px-2 text-sm text-gray-700">Термін виконання завдання: <span class="italic"> Робота з масивами у С# </span> спливає</div>
+                              <div class="px-2 text-xs lg:text-sm text-gray-700">Термін виконання завдання: <span class="italic"> Робота з масивами у С# </span> спливає</div>
                               <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Перейти до завдання</button>
                             </div>                        
                         </div>
@@ -127,12 +127,12 @@
                                       history_edu
                                   </span>
                               </div>
-                              <div class="text-base">
+                              <div class="text-sm lg:text-base">
                                 Організація баз даних та знань
                               </div>
                           </div>
                           <div class="block px-2">
-                              <div class="px-2 text-sm text-gray-700">Ви здали роботу <span class="italic"> Лаб-10 Співвіднесені підзапити </span></div>
+                              <div class="px-2 text-xs lg:text-sm text-gray-700">Ви здали роботу <span class="italic"> Лаб-10 Співвіднесені підзапити </span></div>
                             </div>                        
                         </div>
                     </th>
@@ -161,13 +161,13 @@
                                 newspaper
                               </span>
                           </div>
-                          <div class="text-base">
+                          <div class="text-sm lg:text-base">
                             Моніторинг освітнього середовища Національного університету "Острозька академія"
                           </div>
                       </div>
                       <div class="block px-2">
                         <div>
-                          <div class="px-2 text-sm text-gray-700 text-ellipsis">Шановні колеги, студенти, аспіранти, Слава Україні!</div>
+                          <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Шановні колеги, студенти, аспіранти, Слава Україні!</div>
                           <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Прочитати новину повністю</button>
                         </div>                        
                     </div>
@@ -197,13 +197,13 @@
                                 fact_check
                               </span>
                           </div>
-                          <div class="text-base">
+                          <div class="text-sm lg:text-base">
                             Web-розробка клієнтської та серверної частини
                           </div>
                       </div>
                       <div class="block px-2">
                         <div>
-                          <div class="px-2 text-sm text-gray-700 text-ellipsis">Стретович Дмитро Андрійович оцінив результати вашої роботи <span class="italic">Лабораторна 2. CSS</span></div>
+                          <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Стретович Дмитро Андрійович оцінив результати вашої роботи <span class="italic">Лабораторна 2. CSS</span></div>
                           <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Дізнатися деталі</button>
                         </div>                        
                     </div>
@@ -233,13 +233,13 @@
                                 account_balance_wallet
                               </span>
                           </div>
-                          <div class="text-base">
+                          <div class="text-sm lg:text-base">
                             Борги та переплати: <span class="italic">заборгованість за навчання</span>
                           </div>
                       </div>
                       <div class="block px-2">
                         <div>
-                          <div class="px-2 text-sm text-gray-700 text-ellipsis">Термін сплати: <span class="italic">26.11.2022</span></div>
+                          <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Термін сплати: <span class="italic">26.11.2022</span></div>
                           <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Детальна інформація</button>
                         </div>                        
                     </div>
@@ -269,13 +269,13 @@
                                 account_balance_wallet
                               </span>
                           </div>
-                          <div class="text-base">
+                          <div class="text-sm lg:text-base">
                             Борги та переплати: <span class="italic">переплата за проживання в гуртожитку</span>
                           </div>
                       </div>
                       <div class="block px-2">
                         <div>
-                          <div class="px-2 text-sm text-gray-700 text-ellipsis">Дата платежу: <span class="italic">26.11.2022</span></div>
+                          <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Дата платежу: <span class="italic">26.11.2022</span></div>
                           <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Детальна інформація</button>
                         </div>                        
                     </div>
@@ -305,13 +305,13 @@
                                 credit_card
                               </span>
                           </div>
-                          <div class="text-base">
+                          <div class="text-sm lg:text-base">
                             Платіж
                           </div>
                       </div>
                       <div class="block px-2">
                         <div>
-                          <div class="px-2 text-sm text-gray-700 text-ellipsis">Сплачено 2000 грн. <span class="italic">за прання</span></div>
+                          <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Сплачено 2000 грн. <span class="italic">за прання</span></div>
                         </div>                        
                     </div>
                   </th>
@@ -340,13 +340,13 @@
                                 account_balance
                               </span>
                           </div>
-                          <div class="text-base">
+                          <div class="text-sm lg:text-base">
                             Бібліотека
                           </div>
                       </div>
                       <div class="block px-2">
                         <div>
-                          <div class="px-2 text-sm text-gray-700 text-ellipsis">Термін здачі книги: <span class="italic"> "Філософія буття: книга 1" </span> спливає</div>
+                          <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Термін здачі книги: <span class="italic"> "Філософія буття: книга 1" </span> спливає</div>
                           <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Дізнатися деталі</button>
                         </div>                        
                     </div>
@@ -376,13 +376,13 @@
                               insert_drive_file
                             </span>
                         </div>
-                        <div class="text-base">
+                        <div class="text-sm lg:text-base">
                           Довідка про навчання
                         </div>
                     </div>
                     <div class="block px-2">
                       <div>
-                        <div class="px-2 text-sm text-gray-700 text-ellipsis">Статус заяви: <span class="italic"> Довідка про навчання </span> змінено</div>
+                        <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Статус заяви: <span class="italic"> Довідка про навчання </span> змінено</div>
                         <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Дізнатися деталі</button>
                       </div>                        
                   </div>
@@ -418,7 +418,7 @@
               </a>
             </li>
           </ul>
-          <div class="flex-none text-xs">
+          <div class="flex-none text-xs invisible md:visible">
             <div class="text-gray-700 flex-auto hover:text-gray-900 font-medium rounded-lg md:text-base text-center inline-flex items-center">
               Показати елементiв на сторiнцi:
             </div>
