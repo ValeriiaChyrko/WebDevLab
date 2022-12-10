@@ -48,19 +48,9 @@
                       </div>
                   </a>
               </div>
-              <!--
-              <div>
-                <button class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 mt-4 sm:mt-0 inline-flex items-start justify-start px-6 py-3 bg-indigo-700 hover:bg-indigo-600 focus:outline-none rounded">
-                  <p class="text-sm font-medium leading-none text-white">Додати в обрані</p>
-                </button>
-                <button class="focus:ring-2 focus:ring-offset-2 focus:ring-indigo-600 mt-4 sm:mt-0 inline-flex items-start justify-start px-6 py-3 bg-indigo-700 hover:bg-indigo-600 focus:outline-none rounded">
-                  <p class="text-sm font-medium leading-none text-white">Видалити</p>
-                </button>
-              </div>
-              -->
           </div>
         </div>
-        <div class="overflow-x-auto relative px-4 sm:rounded-lg">
+        <div class="overflow-x-auto relative px-4 sm:rounded-lg hidden md:block">
           <table class="w-full text-xs lg:text-sm text-left text-gray-500">
             <thead class="text-gray-700">
               <tr class="truncate font-medium rounded-lg text-xs md:text-sm lg:text-base items-center">
@@ -100,7 +90,7 @@
                               <div class="px-2 text-xs lg:text-sm text-gray-700">Термін виконання завдання: <span class="italic"> Робота з масивами у С# </span> спливає</div>
                               <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Перейти до завдання</button>
                             </div>                        
-                        </div>
+                          </div>
                       </th>
                       <td class="py-3 px-2">
                           Адміністратор
@@ -109,7 +99,7 @@
                           06.11.2022
                       </td>
                       <td class="py-3 px-2 text-right">
-                        <button type="delete">
+                        <button type="delete" class="p-1 rounded-lg hover:bg-red-300">
                           <span class="material-icons md-light"> delete </span>
                       </button>
                       </td>
@@ -143,7 +133,7 @@
                         05.11.2022
                     </td>
                     <td class="py-3 px-2 text-right">
-                      <button type="delete">
+                      <button type="delete" class="p-1 rounded-lg hover:bg-red-300">
                         <span class="material-icons md-light"> delete </span>
                     </button>
                     </td>
@@ -179,7 +169,7 @@
                       04.11.2022
                   </td>
                   <td class="py-3 px-2 text-right">
-                    <button type="delete">
+                    <button type="delete" class="p-1 rounded-lg hover:bg-red-300">
                       <span class="material-icons md-light"> delete </span>
                   </button>
                   </td>
@@ -215,7 +205,7 @@
                       03.11.2022
                   </td>
                   <td class="py-3 px-2 text-right">
-                    <button type="delete">
+                    <button type="delete" class="p-1 rounded-lg hover:bg-red-300">
                       <span class="material-icons md-light"> delete </span>
                   </button>
                   </td>
@@ -251,7 +241,7 @@
                       03.11.2022
                   </td>
                   <td class="py-3 px-2 text-right">
-                    <button type="delete">
+                    <button type="delete" class="p-1 rounded-lg hover:bg-red-300">
                       <span class="material-icons md-light"> delete </span>
                   </button>
                   </td>
@@ -287,7 +277,7 @@
                       03.11.2022
                   </td>
                   <td class="py-3 px-2 text-right">
-                    <button type="delete">
+                    <button type="delete" class="p-1 rounded-lg hover:bg-red-300">
                       <span class="material-icons md-light"> delete </span>
                   </button>
                   </td>
@@ -322,7 +312,7 @@
                       03.11.2022
                   </td>
                   <td class="py-3 px-2 text-right">
-                    <button type="delete">
+                    <button type="delete" class="p-1 rounded-lg hover:bg-red-300">
                       <span class="material-icons md-light"> delete </span>
                   </button>
                   </td>
@@ -358,7 +348,7 @@
                       26.10.2022
                   </td>
                   <td class="py-3 px-2 text-right">
-                    <button type="delete">
+                    <button type="delete" class="p-1 rounded-lg hover:bg-red-300 hover:bg-red-300 hover:bg-red-300">
                       <span class="material-icons md-light"> delete </span>
                   </button>
                   </td>
@@ -394,7 +384,7 @@
                     25.10.2022
                 </td>
                 <td class="py-3 px-2 text-right">
-                  <button type="delete">
+                  <button type="delete" class="p-1 rounded-lg hover:bg-red-300">
                     <span class="material-icons md-light"> delete </span>
                 </button>
                 </td>
@@ -402,6 +392,277 @@
               </tbody>
           </table>
         </div>
+
+        <!--Mobile design-->
+        <div class="m-2 grid grid-cols-1 gap-4 md:hidden">
+          <div class="px-4 py-4">
+            <div class="py-3 px-4 flex items-center text-xs font-medium leading-none text-gray-600 rounded">
+              <p>Впорядкувати за:</p>
+              <select aria-label="select" class="focus:text-indigo-600 focus:outline-none bg-transparent ml-1 appearance-none cursor-pointer">
+                  <option class="text-sm text-indigo-800 cursor-pointer">датою</option>
+                  <option class="text-sm text-indigo-800 cursor-pointer">темою</option>
+                  <option class="text-sm text-indigo-800 cursor-pointer">відправником</option>
+              </select>
+          </div>
+          <div class="bg-indigo-100 hover:bg-purple-200 p-4 my-1 rounded-lg shadow">
+            <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
+              <div class="flex items-center">
+                <span class="material-icons flex-none px-2">
+                  history_edu
+                </span>
+                <div class="font-bold leading-normal text-gray-700">
+                  Програмування C# (2 курс, 1 семестр)
+                </div>
+              </div>
+              <div class="text-right md:flex items-center space-x-2">
+                <div class="text-gray-500 italic">
+                  Адміністратор
+                </div>
+                <div class="text-gray-500">
+                    06.11.2022
+                </div>
+              </div>
+            </div>
+            <div class="block px-2">
+              <div>
+                <div class="px-4 text-xs lg:text-sm text-gray-700">Термін виконання завдання: <span class="italic"> Робота з масивами у С# </span> спливає</div>
+                <button class="text-indigo-500 text-xs mx-4 underline hover:text-black">Перейти до завдання</button>
+              </div>                        
+            </div>
+          </div>
+          <div class="bg-white hover:bg-purple-200 p-4 rounded-lg shadow">
+            <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
+              <div class="flex items-center">
+                <span class="material-icons flex-none px-2">
+                  history_edu
+                </span>
+                <div class="font-bold leading-normal text-gray-700">
+                  Організація баз даних та знань
+                </div>
+              </div>
+              <div class="text-right md:flex items-center space-x-2">
+                <div class="text-gray-500 italic">
+                  Адміністратор
+                </div>
+                <div class="text-gray-500">
+                    05.11.2022
+                </div>
+              </div>
+            </div>
+            <div class="block px-2">
+              <div>
+                <div class="px-2 text-xs lg:text-sm text-gray-700">Ви здали роботу <span class="italic"> Лаб-10 Співвіднесені підзапити </span></div>
+              </div>                        
+            </div>
+          </div>
+          <div class="bg-white hover:bg-purple-200 p-4 rounded-lg shadow">
+            <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
+              <div class="flex items-center">
+                <span class="material-icons flex-none px-2">
+                  newspaper
+                </span>
+                <div class="font-bold leading-normal text-gray-700 max-w-sm">
+                  Моніторинг освітнього середовища Національного університету "Острозька академія"
+                </div>
+              </div>
+              <div class="text-right md:flex items-center space-x-2">
+                <div class="text-gray-500 italic">
+                  Катерина Сергіївна Озімковська
+                </div>
+                <div class="text-gray-500">
+                    05.11.2022
+                </div>
+              </div>
+            </div>
+            <div class="block px-2">
+              <div>
+                <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Шановні колеги, студенти, аспіранти, Слава Україні!</div>
+                <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Прочитати новину повністю</button>
+              </div>                        
+            </div>
+          </div>
+          <div class="bg-indigo-100 hover:bg-purple-200 p-4 my-1 rounded-lg shadow">
+            <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
+              <div class="flex items-center">
+                <span class="material-icons flex-none px-2">
+                  fact_check
+                </span>
+                <div class="font-bold leading-normal text-gray-700">
+                  Web-розробка клієнтської та серверної частини
+                </div>
+              </div>
+              <div class="text-right md:flex items-center space-x-2">
+                <div class="text-gray-500 italic">
+                  Стретович Дмитро Андрійович
+                </div>
+                <div class="text-gray-500">
+                    03.11.2022
+                </div>
+              </div>
+            </div>
+            <div class="block px-2">
+              <div>
+                <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Стретович Дмитро Андрійович оцінив результати вашої роботи <span class="italic">Лабораторна 2. CSS</span></div>
+                <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Дізнатися деталі</button>
+              </div>                        
+            </div>
+          </div>
+          <div class="bg-white hover:bg-purple-200 p-4 rounded-lg shadow">
+            <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
+              <div class="flex items-center">
+                <span class="material-icons flex-none px-2">
+                  account_balance_wallet
+                </span>
+                <div class="font-bold leading-normal text-gray-700">
+                  Борги та переплати: <span class="italic">заборгованість за навчання</span>
+                </div>
+              </div>
+              <div class="text-right md:flex items-center space-x-2">
+                <div class="text-gray-500 italic">
+                  Любов Миколаївна Музичук
+                </div>
+                <div class="text-gray-500">
+                    02.11.2022
+                </div>
+              </div>
+            </div>
+            <div class="block px-2">
+              <div>
+                <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Термін сплати: <span class="italic">26.11.2022</span></div>
+                <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Детальна інформація</button>
+              </div>                        
+            </div>
+          </div>
+          <div class="bg-indigo-100 hover:bg-purple-200 p-4 my-1 rounded-lg shadow">
+            <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
+              <div class="flex items-center">
+                <span class="material-icons flex-none px-2">
+                  account_balance_wallet
+                </span>
+                <div class="font-bold leading-normal text-gray-700">
+                  Борги та переплати: <span class="italic">переплата за проживання в гуртожитку</span>
+                </div>
+              </div>
+              <div class="text-right md:flex items-center space-x-2">
+                <div class="text-gray-500 italic">
+                  Любов Миколаївна Музичук
+                </div>
+                <div class="text-gray-500">
+                    01.11.2022
+                </div>
+              </div>
+            </div>
+            <div class="block px-2">
+              <div>
+                <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Дата платежу: <span class="italic">26.11.2022</span></div>
+                <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Детальна інформація</button>
+              </div>                        
+            </div>
+          </div>
+          <div class="bg-white hover:bg-purple-200 p-4 rounded-lg shadow">
+            <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
+              <div class="flex items-center">
+                <span class="material-icons flex-none px-2">
+                  credit_card
+                </span>
+                <div class="font-bold leading-normal text-gray-700">
+                  Платіж
+                </div>
+              </div>
+              <div class="text-right md:flex items-center space-x-2">
+                <div class="text-gray-500 italic">
+                  Любов Миколаївна Музичук
+                </div>
+                <div class="text-gray-500">
+                    01.11.2022
+                </div>
+              </div>
+            </div>
+            <div class="block px-2">
+              <div>
+                <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Сплачено 2000 грн. <span class="italic">за прання</span></div>
+              </div>                        
+            </div>
+          </div>
+          <div class="bg-white hover:bg-purple-200 p-4 rounded-lg shadow">
+            <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
+              <div class="flex items-center">
+                <span class="material-icons flex-none px-2">
+                  account_balance
+                </span>
+                <div class="font-bold leading-normal text-gray-700">
+                  Бібліотека
+                </div>
+              </div>
+              <div class="text-right md:flex items-center space-x-2">
+                <div class="text-gray-500 italic">
+                  Адміністратор
+                </div>
+                <div class="text-gray-500">
+                    01.11.2022
+                </div>
+              </div>
+            </div>
+            <div class="block px-2">
+              <div>
+                <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Термін здачі книги: <span class="italic"> "Філософія буття: книга 1" </span> спливає</div>
+                <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Дізнатися деталі</button>
+              </div>                        
+            </div>
+          </div>
+          <div class="bg-white hover:bg-purple-200 p-4 rounded-lg shadow">
+            <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
+              <div class="flex items-center">
+                <span class="material-icons flex-none px-2">
+                  credit_card
+                </span>
+                <div class="font-bold leading-normal text-gray-700">
+                  Платіж
+                </div>
+              </div>
+              <div class="text-right md:flex items-center space-x-2">
+                <div class="text-gray-500 italic">
+                  Любов Миколаївна Музичук
+                </div>
+                <div class="text-gray-500">
+                    01.11.2022
+                </div>
+              </div>
+            </div>
+            <div class="block px-2">
+              <div>
+                <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Сплачено 2000 грн. <span class="italic">за прання</span></div>
+              </div>                        
+            </div>
+          </div>
+          <div class="bg-white hover:bg-purple-200 p-4 rounded-lg shadow">
+            <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
+              <div class="flex items-center">
+                <span class="material-icons flex-none px-2">
+                  insert_drive_file
+                </span>
+                <div class="font-bold leading-normal text-gray-700">
+                  Довідка про навчання
+                </div>
+              </div>
+              <div class="text-right md:flex items-center space-x-2">
+                <div class="text-gray-500 italic">
+                  Адміністратор
+                </div>
+                <div class="text-gray-500">
+                    25.10.2022
+                </div>
+              </div>
+            </div>
+            <div class="block px-2">
+              <div>
+                <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Статус заяви: <span class="italic"> Довідка про навчання </span> змінено</div>
+                <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Дізнатися деталі</button>
+              </div>                        
+            </div>
+          </div>
+        </div>
+      </div>
         <nav aria-label="Page navigation" class="py-4 px-6 inline-flex w-full flex-col lg:flex-row items-center">
           <ul class="inline-flex items-center flex-auto">
             <li>
@@ -431,8 +692,6 @@
             </select>
           </div>
         </nav>
-
-
       </div>
   </body>
 </html>
