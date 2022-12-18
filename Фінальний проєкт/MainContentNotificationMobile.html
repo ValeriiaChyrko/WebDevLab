@@ -33,388 +33,68 @@
           <div class="inline-flex flex-col md:flex-row items-center justify-between">
               <div class="flex items-center">
                   <a class="rounded-full focus:outline-none focus:ring-2  focus:bg-indigo-50 focus:ring-indigo-800">
-                      <div class="py-2 px-4 lg:px-8 bg-purple-200 text-purple-700 rounded-full text-xs md:text-sm lg:text-base cursor-pointer">
+                      <div class="py-2 px-4 lg:px-8 bg-indigo-100 text-indigo-700 rounded-full text-xs md:text-sm lg:text-base">
                           <p>Всі</p>
                       </div>
                   </a>
                   <a class="rounded-full focus:outline-none focus:ring-2 focus:bg-indigo-50 focus:ring-indigo-800 ml-2 md:ml-4">
-                      <div class="py-2 px-4 lg:px-8 text-gray-600 hover:text-purple-700 hover:bg-purple-200 rounded-full text-xs md:text-sm lg:text-base cursor-pointer">
+                      <div class="py-2 px-4 lg:px-8 text-gray-600 hover:text-indigo-700 hover:bg-indigo-100 rounded-full text-xs md:text-sm lg:text-base">
                           <p>Непрочитані</p>
                       </div>
                   </a>
                   <a class="rounded-full focus:outline-none focus:ring-2 focus:bg-indigo-50 focus:ring-indigo-800 ml-2 md:ml-4">
-                      <div class="py-2 px-4 lg:px-8 text-gray-600 hover:text-purple-700 hover:bg-purple-200 rounded-full text-xs md:text-sm lg:text-base cursor-pointer">
+                      <div class="py-2 px-4 lg:px-8 text-gray-600 hover:text-indigo-700 hover:bg-indigo-100 rounded-full text-xs md:text-sm lg:text-base">
                           <p>Обрані</p>
                       </div>
                   </a>
               </div>
           </div>
         </div>
-        <div class="overflow-x-auto relative px-4 sm:rounded-lg hidden md:block">
-          <table class="w-full text-xs lg:text-sm text-left text-gray-500">
-            <thead class="text-gray-700">
-              <tr class="truncate font-medium rounded-lg text-xs md:text-sm lg:text-base items-center">
-                  <th class="p-4 w-6">
-                  </th>
-                  <th scope="col" class="py-3 px-2">
-                    <button id="dropdownInformationButton" class="flex-auto inline-flex items-center hover:text-gray-900" type="button"> Тип сповіщення <div class="pt-2 px-2 float-right"><span class="material-icons md-light"> expand_more </span></div></button>
-                  </th>
-                  <th scope="col" class="py-3 px-2">
-                    <button id="dropdownInformationButton" class="flex-auto inline-flex items-center hover:text-gray-900" type="button"> Відправник <div class="pt-2 px-2 float-right"><span class="material-icons md-light"> expand_more </span></div></button>
-                  </th>
-                  <th scope="col" class="py-3 px-2">
-                    <button id="dropdownInformationButton" class="flex-auto inline-flex items-center hover:text-gray-900" type="button"> Дата <div class="pt-2 px-2 float-right"><span class="material-icons md-light"> expand_more </span></div></button>
-                  </th>
-              </tr>
-          </thead>
-              <tbody>
-                  <tr class="bg-white border-b bg-indigo-100 hover:bg-purple-200">
-                      <th class="p-4 w-6">
-                        <input type="checkbox" value="" class="w-4 h-4 p-3 text-indigo-500 rounded border-gray-300 cursor-pointer">
-                      </th>
-                      <th scope="row" class="py-3 px-2 font-medium text-gray-900">
-                        <div class="inline-flex flex-col">
-                          <div class="items-center">
-                            <div class="inline-flex">
-                              <div class="inline-flex flex-row items-center">
-                                  <span class="material-icons flex-none px-2">
-                                      history_edu
-                                  </span>
-                              </div>
-                              <div class="text-sm lg:text-base">
-                                Програмування C# (2 курс, 1 семестр)
-                              </div>
-                          </div>
-                          <div class="block px-2">
-                            <div>
-                              <div class="px-2 text-xs lg:text-sm text-gray-700">Термін виконання завдання: <span class="italic"> Робота з масивами у С# </span> спливає</div>
-                              <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Перейти до завдання</button>
-                            </div>                        
-                          </div>
-                      </th>
-                      <td class="py-3 px-2">
-                          Адміністратор
-                      </td>
-                      <td class="py-3 px-2">
-                          06.11.2022
-                      </td>
-                      <td class="py-3 px-2 text-right">
-                        <button type="delete" class="p-1 rounded-lg hover:bg-red-300">
-                          <span class="material-icons md-light"> delete </span>
-                      </button>
-                      </td>
-                  </tr>
-                  <tr class="bg-white border-b bg-indigo-100 hover:bg-purple-200">
-                    <th class="p-4 w-6">
-                      <input type="checkbox" value="" class="w-4 h-4 p-3 text-indigo-500 rounded border-gray-300 cursor-pointer">
-                    </th>
-                    <th scope="row" class="py-3 px-2 font-medium text-gray-900">
-                        <div class="inline-flex flex-col">
-                          <div class="items-center">
-                            <div class="inline-flex">
-                              <div class="inline-flex flex-row items-center">
-                                  <span class="material-icons flex-none px-2">
-                                      history_edu
-                                  </span>
-                              </div>
-                              <div class="text-sm lg:text-base">
-                                Організація баз даних та знань
-                              </div>
-                          </div>
-                          <div class="block px-2">
-                              <div class="px-2 text-xs lg:text-sm text-gray-700">Ви здали роботу <span class="italic"> Лаб-10 Співвіднесені підзапити </span></div>
-                            </div>                        
-                        </div>
-                    </th>
-                    <td class="py-3 px-2">
-                        Адміністратор
-                    </td>
-                    <td class="py-3 px-2">
-                        05.11.2022
-                    </td>
-                    <td class="py-3 px-2 text-right">
-                      <button type="delete" class="p-1 rounded-lg hover:bg-red-300">
-                        <span class="material-icons md-light"> delete </span>
-                    </button>
-                    </td>
-                </tr>
-                <tr class="bg-white border-b hover:bg-purple-200">
-                  <th class="p-4 w-6">
-                    <input type="checkbox" value="" class="w-4 h-4 p-3 text-indigo-500 rounded border-gray-300 cursor-pointer">
-                  </th>
-                  <th scope="row" class="py-3 px-2 font-medium text-gray-900">
-                    <div class="inline-flex flex-col">
-                      <div class="items-center">
-                        <div class="inline-flex">
-                          <div class="inline-flex flex-row items-center">
-                              <span class="material-icons flex-none px-2">
-                                newspaper
-                              </span>
-                          </div>
-                          <div class="text-sm lg:text-base">
-                            Моніторинг освітнього середовища Національного університету "Острозька академія"
-                          </div>
-                      </div>
-                      <div class="block px-2">
-                        <div>
-                          <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Шановні колеги, студенти, аспіранти, Слава Україні!</div>
-                          <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Прочитати новину повністю</button>
-                        </div>                        
-                    </div>
-                  </th>
-                  <td class="py-3 px-2">
-                      Катерина Сергіївна Озімковська
-                  </td>
-                  <td class="py-3 px-2">
-                      04.11.2022
-                  </td>
-                  <td class="py-3 px-2 text-right">
-                    <button type="delete" class="p-1 rounded-lg hover:bg-red-300">
-                      <span class="material-icons md-light"> delete </span>
-                  </button>
-                  </td>
-                </tr>
-                <tr class="bg-white border-b hover:bg-purple-200">
-                  <th class="p-4 w-6">
-                    <input type="checkbox" value="" class="w-4 h-4 p-3 text-indigo-500 rounded border-gray-300 cursor-pointer">
-                  </th>
-                  <th scope="row" class="py-3 px-2 font-medium text-gray-900">
-                    <div class="inline-flex flex-col">
-                      <div class="items-center">
-                        <div class="inline-flex">
-                          <div class="inline-flex flex-row items-center">
-                              <span class="material-icons flex-none px-2">
-                                fact_check
-                              </span>
-                          </div>
-                          <div class="text-sm lg:text-base">
-                            Web-розробка клієнтської та серверної частини
-                          </div>
-                      </div>
-                      <div class="block px-2">
-                        <div>
-                          <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Стретович Дмитро Андрійович оцінив результати вашої роботи <span class="italic">Лабораторна 2. CSS</span></div>
-                          <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Дізнатися деталі</button>
-                        </div>                        
-                    </div>
-                  </th>
-                  <td class="py-3 px-2">
-                      Стретович Дмитро Андрійович
-                  </td>
-                  <td class="py-3 px-2">
-                      03.11.2022
-                  </td>
-                  <td class="py-3 px-2 text-right">
-                    <button type="delete" class="p-1 rounded-lg hover:bg-red-300">
-                      <span class="material-icons md-light"> delete </span>
-                  </button>
-                  </td>
-                </tr>
-                <tr class="bg-white border-b hover:bg-purple-200">
-                  <th class="p-4 w-6">
-                    <input type="checkbox" value="" class="w-4 h-4 p-3 text-indigo-500 rounded border-gray-300 cursor-pointer">
-                  </th>
-                  <th scope="row" class="py-3 px-2 font-medium text-gray-900">
-                    <div class="inline-flex flex-col">
-                      <div class="items-center">
-                        <div class="inline-flex">
-                          <div class="inline-flex flex-row items-center">
-                              <span class="material-icons flex-none px-2">
-                                account_balance_wallet
-                              </span>
-                          </div>
-                          <div class="text-sm lg:text-base">
-                            Борги та переплати: <span class="italic">заборгованість за навчання</span>
-                          </div>
-                      </div>
-                      <div class="block px-2">
-                        <div>
-                          <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Термін сплати: <span class="italic">26.11.2022</span></div>
-                          <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Детальна інформація</button>
-                        </div>                        
-                    </div>
-                  </th>
-                  <td class="py-3 px-2">
-                      Любов Миколаївна Музичук
-                  </td>
-                  <td class="py-3 px-2">
-                      03.11.2022
-                  </td>
-                  <td class="py-3 px-2 text-right">
-                    <button type="delete" class="p-1 rounded-lg hover:bg-red-300">
-                      <span class="material-icons md-light"> delete </span>
-                  </button>
-                  </td>
-                </tr>
-                <tr class="bg-white border-b hover:bg-purple-200">
-                  <th class="p-4 w-6">
-                    <input type="checkbox" value="" class="w-4 h-4 p-3 text-indigo-500 rounded border-gray-300 cursor-pointer">
-                  </th>
-                  <th scope="row" class="py-3 px-2 font-medium text-gray-900">
-                    <div class="inline-flex flex-col">
-                      <div class="items-center">
-                        <div class="inline-flex">
-                          <div class="inline-flex flex-row items-center">
-                              <span class="material-icons flex-none px-2">
-                                account_balance_wallet
-                              </span>
-                          </div>
-                          <div class="text-sm lg:text-base">
-                            Борги та переплати: <span class="italic">переплата за проживання в гуртожитку</span>
-                          </div>
-                      </div>
-                      <div class="block px-2">
-                        <div>
-                          <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Дата платежу: <span class="italic">26.11.2022</span></div>
-                          <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Детальна інформація</button>
-                        </div>                        
-                    </div>
-                  </th>
-                  <td class="py-3 px-2">
-                      Любов Миколаївна Музичук
-                  </td>
-                  <td class="py-3 px-2">
-                      03.11.2022
-                  </td>
-                  <td class="py-3 px-2 text-right">
-                    <button type="delete" class="p-1 rounded-lg hover:bg-red-300">
-                      <span class="material-icons md-light"> delete </span>
-                  </button>
-                  </td>
-                </tr>
-                <tr class="bg-white border-b bg-indigo-100 hover:bg-purple-200">
-                  <th class="p-4 w-6">
-                    <input type="checkbox" value="" class="w-4 h-4 p-3 text-indigo-500 rounded border-gray-300 cursor-pointer">
-                  </th>
-                  <th scope="row" class="py-3 px-2 font-medium text-gray-900">
-                    <div class="inline-flex flex-col">
-                      <div class="items-center">
-                        <div class="inline-flex">
-                          <div class="inline-flex flex-row items-center">
-                              <span class="material-icons flex-none px-2">
-                                credit_card
-                              </span>
-                          </div>
-                          <div class="text-sm lg:text-base">
-                            Платіж
-                          </div>
-                      </div>
-                      <div class="block px-2">
-                        <div>
-                          <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Сплачено 2000 грн. <span class="italic">за прання</span></div>
-                        </div>                        
-                    </div>
-                  </th>
-                  <td class="py-3 px-2">
-                      Любов Миколаївна Музичук
-                  </td>
-                  <td class="py-3 px-2">
-                      03.11.2022
-                  </td>
-                  <td class="py-3 px-2 text-right">
-                    <button type="delete" class="p-1 rounded-lg hover:bg-red-300">
-                      <span class="material-icons md-light"> delete </span>
-                  </button>
-                  </td>
-                </tr>
-                <tr class="bg-white border-b bg-indigo-100 hover:bg-purple-200">
-                  <th class="p-4 w-6">
-                    <input type="checkbox" value="" class="w-4 h-4 p-3 text-indigo-500 rounded border-gray-300 cursor-pointer">
-                  </th>
-                  <th scope="row" class="py-3 px-2 font-medium text-gray-900">
-                    <div class="inline-flex flex-col">
-                      <div class="items-center">
-                        <div class="inline-flex">
-                          <div class="inline-flex flex-row items-center">
-                              <span class="material-icons flex-none px-2">
-                                account_balance
-                              </span>
-                          </div>
-                          <div class="text-sm lg:text-base">
-                            Бібліотека
-                          </div>
-                      </div>
-                      <div class="block px-2">
-                        <div>
-                          <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Термін здачі книги: <span class="italic"> "Філософія буття: книга 1" </span> спливає</div>
-                          <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Дізнатися деталі</button>
-                        </div>                        
-                    </div>
-                  </th>
-                  <td class="py-3 px-2">
-                      Адміністратор
-                  </td>
-                  <td class="py-3 px-2">
-                      26.10.2022
-                  </td>
-                  <td class="py-3 px-2 text-right">
-                    <button type="delete" class="p-1 rounded-lg hover:bg-red-300 hover:bg-red-300 hover:bg-red-300">
-                      <span class="material-icons md-light"> delete </span>
-                  </button>
-                  </td>
-              </tr>
-              <tr class="bg-white border-b hover:bg-purple-200">
-                <th class="p-4 w-6">
-                  <input type="checkbox" value="" class="w-4 h-4 p-3 text-indigo-500 rounded border-gray-300 cursor-pointer">
-                </th>
-                <th scope="row" class="py-3 px-2 font-medium text-gray-900">
-                  <div class="inline-flex flex-col">
-                    <div class="items-center">
-                      <div class="inline-flex">
-                        <div class="inline-flex flex-row items-center">
-                            <span class="material-icons flex-none px-2">
-                              insert_drive_file
-                            </span>
-                        </div>
-                        <div class="text-sm lg:text-base">
-                          Довідка про навчання
-                        </div>
-                    </div>
-                    <div class="block px-2">
-                      <div>
-                        <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Статус заяви: <span class="italic"> Довідка про навчання </span> змінено</div>
-                        <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Дізнатися деталі</button>
-                      </div>                        
-                  </div>
-                </th>
-                <td class="py-3 px-2">
-                    Адміністратор
-                </td>
-                <td class="py-3 px-2">
-                    25.10.2022
-                </td>
-                <td class="py-3 px-2 text-right">
-                  <button type="delete" class="p-1 rounded-lg hover:bg-red-300">
-                    <span class="material-icons md-light"> delete </span>
-                </button>
-                </td>
-            </tr>
-              </tbody>
-          </table>
+
+        <div class="px-4 py-4">
+          <div class="lg:hidden py-3 px-4 flex items-center text-xs md:text-sm font-medium leading-none text-gray-600 rounded">
+            <p>Впорядкувати за:</p>
+            <select aria-label="select" class="focus:text-indigo-600 focus:outline-none bg-transparent ml-1 appearance-none cursor-pointer">
+                <option class="text-sm text-indigo-800 cursor-pointer">датою</option>
+                <option class="text-sm text-indigo-800 cursor-pointer">темою</option>
+                <option class="text-sm text-indigo-800 cursor-pointer">відправником</option>
+            </select>
         </div>
 
-        <!--Mobile design-->
-        <div class="m-2 grid grid-cols-1 gap-4 md:hidden">
-          <div class="px-4 py-4">
-            <div class="py-3 px-4 flex items-center text-xs font-medium leading-none text-gray-600 rounded">
-              <p>Впорядкувати за:</p>
-              <select aria-label="select" class="focus:text-indigo-600 focus:outline-none bg-transparent ml-1 appearance-none cursor-pointer">
-                  <option class="text-sm text-indigo-800 cursor-pointer">датою</option>
-                  <option class="text-sm text-indigo-800 cursor-pointer">темою</option>
-                  <option class="text-sm text-indigo-800 cursor-pointer">відправником</option>
-              </select>
+        <div class="hidden lg:flex flex-row justify-between px-5 truncate font-medium rounded-lg text-xs md:text-sm lg:text-base items-center">
+          <div scope="col" class="w-4/5 py-3 px-10 text-left">
+            <button id="dropdownInformationButton" class="flex-auto inline-flex items-center hover:text-gray-900" type="button"> Тип сповіщення <div class="pt-2 px-2 float-right"><span class="material-icons md-light"> expand_more </span></div></button>
           </div>
-          <div class="bg-indigo-100 hover:bg-purple-200 p-4 my-1 rounded-lg shadow">
+          <div class="flex flex-row pr-5">
+            <div scope="col" class="py-3 px-2 text-right">
+              <button id="dropdownInformationButton" class="flex-auto inline-flex items-center hover:text-gray-900" type="button"> Відправник <div class="pt-2 px-2 float-right"><span class="material-icons md-light"> expand_more </span></div></button>
+            </div>
+            <div scope="col" class="py-3 text-right">
+              <button id="dropdownInformationButton" class="flex-auto inline-flex items-center hover:text-gray-900" type="button"> Дата <div class="pt-2 px-2 float-right"><span class="material-icons md-light"> expand_more </span></div></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="m-2 grid grid-cols-1 gap-4">
+          <div class="grid grid-flow-col bg-indigo-100 hover:bg-purple-200 p-4 my-1 rounded-lg shadow">
             <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
-              <div class="flex items-center">
-                <span class="material-icons flex-none px-2">
-                  history_edu
-                </span>
-                <div class="font-bold leading-normal text-gray-700">
-                  Програмування C# (2 курс, 1 семестр)
+              <div class="w-full">
+                <div class="flex items-center">
+                  <span class="material-icons flex-none px-2">
+                    history_edu
+                  </span>
+                  <div class="font-bold leading-normal text-gray-700">
+                    Програмування C# (2 курс, 1 семестр)
+                  </div>
+                </div>
+                <div class="block px-2">
+                  <div>
+                    <div class="px-4 text-xs lg:text-sm text-gray-700">Термін виконання завдання: <span class="italic"> Робота з масивами у С# </span> спливає</div>
+                    <button class="text-indigo-500 text-xs mx-4 underline hover:text-black">Перейти до завдання</button>
+                  </div>                        
                 </div>
               </div>
-              <div class="text-right md:flex items-center space-x-2">
+              <div class="text-right lg:flex items-center space-x-6">
                 <div class="text-gray-500 italic">
                   Адміністратор
                 </div>
@@ -422,25 +102,32 @@
                     06.11.2022
                 </div>
               </div>
-            </div>
-            <div class="block px-2">
               <div>
-                <div class="px-4 text-xs lg:text-sm text-gray-700">Термін виконання завдання: <span class="italic"> Робота з масивами у С# </span> спливає</div>
-                <button class="text-indigo-500 text-xs mx-4 underline hover:text-black">Перейти до завдання</button>
-              </div>                        
+                <button type="delete" class="hidden md:block p-1 rounded-lg hover:bg-red-300">
+                  <span class="material-icons md-light"> delete </span>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="bg-white hover:bg-purple-200 p-4 rounded-lg shadow">
+
+          <div class="grid grid-flow-col hover:bg-purple-200 p-4 my-1 rounded-lg shadow">
             <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
-              <div class="flex items-center">
-                <span class="material-icons flex-none px-2">
-                  history_edu
-                </span>
-                <div class="font-bold leading-normal text-gray-700">
-                  Організація баз даних та знань
+              <div class="w-full">
+                <div class="flex items-center">
+                  <span class="material-icons flex-none px-2">
+                    history_edu
+                  </span>
+                  <div class="font-bold leading-normal text-gray-700">
+                    Організація баз даних та знань
+                  </div>
+                </div>
+                <div class="block px-2">
+                  <div>
+                    <div class="px-2 text-xs lg:text-sm text-gray-700">Ви здали роботу <span class="italic"> Лаб-10 Співвіднесені підзапити </span></div>
+                  </div>                        
                 </div>
               </div>
-              <div class="text-right md:flex items-center space-x-2">
+              <div class="text-right lg:flex items-center space-x-6">
                 <div class="text-gray-500 italic">
                   Адміністратор
                 </div>
@@ -448,24 +135,33 @@
                     05.11.2022
                 </div>
               </div>
-            </div>
-            <div class="block px-2">
               <div>
-                <div class="px-2 text-xs lg:text-sm text-gray-700">Ви здали роботу <span class="italic"> Лаб-10 Співвіднесені підзапити </span></div>
-              </div>                        
+                <button type="delete" class="hidden md:block p-1 rounded-lg hover:bg-red-300">
+                  <span class="material-icons md-light"> delete </span>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="bg-white hover:bg-purple-200 p-4 rounded-lg shadow">
+
+          <div class="grid grid-flow-col hover:bg-purple-200 p-4 my-1 rounded-lg shadow">
             <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
-              <div class="flex items-center">
-                <span class="material-icons flex-none px-2">
-                  newspaper
-                </span>
-                <div class="font-bold leading-normal text-gray-700 max-w-sm">
-                  Моніторинг освітнього середовища Національного університету "Острозька академія"
+              <div class="w-full">
+                <div class="flex items-center">
+                  <span class="material-icons flex-none px-2">
+                    newspaper
+                  </span>
+                  <div class="font-bold leading-normal text-gray-700">
+                    Моніторинг освітнього середовища Національного університету "Острозька академія"
+                  </div>
+                </div>
+                <div class="block px-2">
+                  <div>
+                    <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Шановні колеги, студенти, аспіранти, Слава Україні!</div>
+                    <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Прочитати новину повністю</button>    
+                  </div>                        
                 </div>
               </div>
-              <div class="text-right md:flex items-center space-x-2">
+              <div class="text-right lg:flex items-center space-x-6">
                 <div class="text-gray-500 italic">
                   Катерина Сергіївна Озімковська
                 </div>
@@ -473,25 +169,32 @@
                     05.11.2022
                 </div>
               </div>
-            </div>
-            <div class="block px-2">
               <div>
-                <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Шановні колеги, студенти, аспіранти, Слава Україні!</div>
-                <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Прочитати новину повністю</button>
-              </div>                        
+                <button type="delete" class="hidden md:block p-1 rounded-lg hover:bg-red-300">
+                  <span class="material-icons md-light"> delete </span>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="bg-indigo-100 hover:bg-purple-200 p-4 my-1 rounded-lg shadow">
+
+          <div class="grid grid-flow-col hover:bg-purple-200 p-4 my-1 rounded-lg shadow">
             <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
-              <div class="flex items-center">
-                <span class="material-icons flex-none px-2">
-                  fact_check
-                </span>
-                <div class="font-bold leading-normal text-gray-700">
-                  Web-розробка клієнтської та серверної частини
+              <div class="w-full">
+                <div class="flex items-center">
+                  <span class="material-icons flex-none px-2">
+                    fact_check
+                  </span>
+                  <div class="font-bold leading-normal text-gray-700">
+                    Web-розробка клієнтської та серверної частини
+                  </div>
+                </div>
+                <div class="block px-2">
+                  <div>
+                    <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Стретович Дмитро Андрійович оцінив результати вашої роботи <span class="italic">Лабораторна 2. CSS</span></div>
+                    <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Дізнатися деталі</button>                      </div>                        
                 </div>
               </div>
-              <div class="text-right md:flex items-center space-x-2">
+              <div class="text-right lg:flex items-center space-x-6">
                 <div class="text-gray-500 italic">
                   Стретович Дмитро Андрійович
                 </div>
@@ -499,25 +202,33 @@
                     03.11.2022
                 </div>
               </div>
-            </div>
-            <div class="block px-2">
               <div>
-                <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Стретович Дмитро Андрійович оцінив результати вашої роботи <span class="italic">Лабораторна 2. CSS</span></div>
-                <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Дізнатися деталі</button>
-              </div>                        
+                <button type="delete" class="hidden md:block p-1 rounded-lg hover:bg-red-300">
+                  <span class="material-icons md-light"> delete </span>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="bg-white hover:bg-purple-200 p-4 rounded-lg shadow">
+          
+          <div class="grid grid-flow-col hover:bg-purple-200 p-4 my-1 rounded-lg shadow">
             <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
-              <div class="flex items-center">
-                <span class="material-icons flex-none px-2">
-                  account_balance_wallet
-                </span>
-                <div class="font-bold leading-normal text-gray-700">
-                  Борги та переплати: <span class="italic">заборгованість за навчання</span>
+              <div class="w-full">
+                <div class="flex items-center">
+                  <span class="material-icons flex-none px-2">
+                    account_balance_wallet
+                  </span>
+                  <div class="font-bold leading-normal text-gray-700">
+                    Борги та переплати: <span class="italic">заборгованість за навчання</span>
+                  </div>
+                </div>
+                <div class="block px-2">
+                  <div>
+                    <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Термін сплати: <span class="italic">26.11.2022</span></div>
+                    <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Детальна інформація</button>    
+                  </div>
                 </div>
               </div>
-              <div class="text-right md:flex items-center space-x-2">
+              <div class="text-right lg:flex items-center space-x-6">
                 <div class="text-gray-500 italic">
                   Любов Миколаївна Музичук
                 </div>
@@ -525,25 +236,66 @@
                     02.11.2022
                 </div>
               </div>
-            </div>
-            <div class="block px-2">
               <div>
-                <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Термін сплати: <span class="italic">26.11.2022</span></div>
-                <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Детальна інформація</button>
-              </div>                        
+                <button type="delete" class="hidden md:block p-1 rounded-lg hover:bg-red-300">
+                  <span class="material-icons md-light"> delete </span>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="bg-indigo-100 hover:bg-purple-200 p-4 my-1 rounded-lg shadow">
+
+          <div class="grid grid-flow-col hover:bg-purple-200 p-4 my-1 rounded-lg shadow">
             <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
-              <div class="flex items-center">
-                <span class="material-icons flex-none px-2">
-                  account_balance_wallet
-                </span>
-                <div class="font-bold leading-normal text-gray-700">
-                  Борги та переплати: <span class="italic">переплата за проживання в гуртожитку</span>
+              <div class="w-full">
+                <div class="flex items-center">
+                  <span class="material-icons flex-none px-2">
+                    account_balance_wallet
+                  </span>
+                  <div class="font-bold leading-normal text-gray-700">
+                    Борги та переплати: <span class="italic">переплата за проживання в гуртожитку</span>
+                  </div>
+                </div>
+                <div class="block px-2">
+                  <div>
+                    <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Дата платежу: <span class="italic">26.11.2022</span></div>
+                    <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Детальна інформація</button>
+                  </div>
                 </div>
               </div>
-              <div class="text-right md:flex items-center space-x-2">
+              <div class="text-right lg:flex items-center space-x-6">
+                <div class="text-gray-500 italic">
+                  Любов Миколаївна Музичук
+                </div>
+                <div class="text-gray-500">
+                    02.11.2022
+                </div>
+              </div>
+              <div>
+                <button type="delete" class="hidden md:block p-1 rounded-lg hover:bg-red-300">
+                  <span class="material-icons md-light"> delete </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="grid grid-flow-col hover:bg-purple-200 p-4 my-1 rounded-lg shadow">
+            <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
+              <div class="w-full">
+                <div class="flex items-center">
+                  <span class="material-icons flex-none px-2">
+                    credit_card
+                  </span>
+                  <div class="font-bold leading-normal text-gray-700">
+                    Платіж
+                  </div>
+                </div>
+                <div class="block px-2">
+                  <div>
+                    <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Сплачено 2000 грн. <span class="italic">за прання</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-right lg:flex items-center space-x-6">
                 <div class="text-gray-500 italic">
                   Любов Миколаївна Музичук
                 </div>
@@ -551,101 +303,67 @@
                     01.11.2022
                 </div>
               </div>
-            </div>
-            <div class="block px-2">
               <div>
-                <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Дата платежу: <span class="italic">26.11.2022</span></div>
-                <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Детальна інформація</button>
-              </div>                        
+                <button type="delete" class="hidden md:block p-1 rounded-lg hover:bg-red-300">
+                  <span class="material-icons md-light"> delete </span>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="bg-white hover:bg-purple-200 p-4 rounded-lg shadow">
+
+          <div class="grid grid-flow-col hover:bg-purple-200 p-4 my-1 rounded-lg shadow">
             <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
-              <div class="flex items-center">
-                <span class="material-icons flex-none px-2">
-                  credit_card
-                </span>
-                <div class="font-bold leading-normal text-gray-700">
-                  Платіж
+              <div class="w-full">
+                <div class="flex items-center">
+                  <span class="material-icons flex-none px-2">
+                    account_balance
+                  </span>
+                  <div class="font-bold leading-normal text-gray-700">
+                    Бібліотека
+                  </div>
+                </div>
+                <div class="block px-2">
+                  <div>
+                    <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Термін здачі книги: <span class="italic"> "Філософія буття: книга 1" </span> спливає</div>
+                    <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Дізнатися деталі</button>
+                  </div>
                 </div>
               </div>
-              <div class="text-right md:flex items-center space-x-2">
-                <div class="text-gray-500 italic">
-                  Любов Миколаївна Музичук
-                </div>
-                <div class="text-gray-500">
-                    01.11.2022
-                </div>
-              </div>
-            </div>
-            <div class="block px-2">
-              <div>
-                <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Сплачено 2000 грн. <span class="italic">за прання</span></div>
-              </div>                        
-            </div>
-          </div>
-          <div class="bg-white hover:bg-purple-200 p-4 rounded-lg shadow">
-            <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
-              <div class="flex items-center">
-                <span class="material-icons flex-none px-2">
-                  account_balance
-                </span>
-                <div class="font-bold leading-normal text-gray-700">
-                  Бібліотека
-                </div>
-              </div>
-              <div class="text-right md:flex items-center space-x-2">
+              <div class="text-right lg:flex items-center space-x-6">
                 <div class="text-gray-500 italic">
                   Адміністратор
                 </div>
                 <div class="text-gray-500">
-                    01.11.2022
+                    28.10.2022
                 </div>
               </div>
-            </div>
-            <div class="block px-2">
               <div>
-                <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Термін здачі книги: <span class="italic"> "Філософія буття: книга 1" </span> спливає</div>
-                <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Дізнатися деталі</button>
-              </div>                        
+                <button type="delete" class="hidden md:block p-1 rounded-lg hover:bg-red-300">
+                  <span class="material-icons md-light"> delete </span>
+                </button>
+              </div>
             </div>
           </div>
-          <div class="bg-white hover:bg-purple-200 p-4 rounded-lg shadow">
+          
+          <div class="grid grid-flow-col hover:bg-purple-200 p-4 my-1 rounded-lg shadow">
             <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
-              <div class="flex items-center">
-                <span class="material-icons flex-none px-2">
-                  credit_card
-                </span>
-                <div class="font-bold leading-normal text-gray-700">
-                  Платіж
+              <div class="w-full">
+                <div class="flex items-center">
+                  <span class="material-icons flex-none px-2">
+                    insert_drive_file
+                  </span>
+                  <div class="font-bold leading-normal text-gray-700">
+                    Довідка про навчання
+                  </div>
+                </div>
+                <div class="block px-2">
+                  <div>
+                    <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Статус заяви: <span class="italic"> Довідка про навчання </span> змінено</div>
+                    <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Дізнатися деталі</button>
+                  </div>
                 </div>
               </div>
-              <div class="text-right md:flex items-center space-x-2">
-                <div class="text-gray-500 italic">
-                  Любов Миколаївна Музичук
-                </div>
-                <div class="text-gray-500">
-                    01.11.2022
-                </div>
-              </div>
-            </div>
-            <div class="block px-2">
-              <div>
-                <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Сплачено 2000 грн. <span class="italic">за прання</span></div>
-              </div>                        
-            </div>
-          </div>
-          <div class="bg-white hover:bg-purple-200 p-4 rounded-lg shadow">
-            <div class="md:flex items-center space-x-3 text-xs sm:text-sm">
-              <div class="flex items-center">
-                <span class="material-icons flex-none px-2">
-                  insert_drive_file
-                </span>
-                <div class="font-bold leading-normal text-gray-700">
-                  Довідка про навчання
-                </div>
-              </div>
-              <div class="text-right md:flex items-center space-x-2">
+              <div class="text-right lg:flex items-center space-x-6">
                 <div class="text-gray-500 italic">
                   Адміністратор
                 </div>
@@ -653,16 +371,14 @@
                     25.10.2022
                 </div>
               </div>
-            </div>
-            <div class="block px-2">
               <div>
-                <div class="px-2 text-xs lg:text-sm text-gray-700 text-ellipsis">Статус заяви: <span class="italic"> Довідка про навчання </span> змінено</div>
-                <button class="text-indigo-500 text-xs mx-2 underline hover:text-black">Дізнатися деталі</button>
-              </div>                        
+                <button type="delete" class="hidden md:block p-1 rounded-lg hover:bg-red-300">
+                  <span class="material-icons md-light"> delete </span>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
+        
         <nav aria-label="Page navigation" class="py-4 px-6 inline-flex w-full flex-col lg:flex-row items-center">
           <ul class="inline-flex items-center flex-auto">
             <li>
@@ -692,6 +408,8 @@
             </select>
           </div>
         </nav>
+
+
       </div>
   </body>
 </html>
